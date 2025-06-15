@@ -493,7 +493,7 @@
                                 <input type="radio" name="illustrationType" value="retrato" checked>
                                 <span>Retrato</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="15">$15 USD</span>
+                            <span class="font-semibold price-tag" data-usd="10">$10 USD</span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -501,7 +501,7 @@
                                 <input type="radio" name="illustrationType" value="medioCuerpo">
                                 <span>Medio Cuerpo</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="20">$20 USD</span>
+                            <span class="font-semibold price-tag" data-usd="15">$15 USD</span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -509,7 +509,7 @@
                                 <input type="radio" name="illustrationType" value="cuerpoCompleto">
                                 <span>Cuerpo Completo</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="25">$25 USD</span>
+                            <span class="font-semibold price-tag" data-usd="20">$20 USD</span>
                         </div>
                     </div>
                     
@@ -525,7 +525,7 @@
                                     <button type="button" class="increase-chars">+</button>
                                 </div>
                             </div>
-                            <span class="font-semibold price-tag" data-usd="15">$15 USD c/u</span>
+                            <span class="font-semibold price-tag" data-usd="10">$10 USD c/u</span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -541,7 +541,7 @@
                                 <input type="checkbox" name="illustrationExtras" value="fondoDetallado">
                                 <span>Fondo detallado</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="15">$15 USD</span>
+                            <span class="font-semibold price-tag" data-usd="10">$10 USD</span>
                         </div>
                     </div>
                 </div>
@@ -644,7 +644,7 @@
                                 <input type="radio" name="comicType" value="1page" checked>
                                 <span>1 página</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="40">$40 USD</span>
+                            <span class="font-semibold price-tag" data-usd="35">$35 USD</span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -652,7 +652,7 @@
                                 <input type="radio" name="comicType" value="3pages">
                                 <span>3 páginas</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="108">$18 USD <span class="text-sm text-green-600">(10% desc.)</span></span>
+                            <span class="font-semibold price-tag" data-usd="94.50">$94.50 USD <span class="text-sm text-green-600">(10% desc.)</span></span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -660,7 +660,7 @@
                                 <input type="radio" name="comicType" value="5pages">
                                 <span>5 páginas</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="170">$170 USD <span class="text-sm text-green-600">(15% desc.)</span></span>
+                            <span class="font-semibold price-tag" data-usd="148.75">$148.75 USD <span class="text-sm text-green-600">(15% desc.)</span></span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -668,7 +668,7 @@
                                 <input type="radio" name="comicType" value="10pages">
                                 <span>10 páginas</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="320">$320 USD <span class="text-sm text-green-600">(20% desc.)</span></span>
+                            <span class="font-semibold price-tag" data-usd="280">$280 USD <span class="text-sm text-green-600">(20% desc.)</span></span>
                         </div>
                     </div>
                     
@@ -696,7 +696,7 @@
                                     <button type="button" class="increase-char-design">+</button>
                                 </div>
                             </div>
-                            <span class="font-semibold price-tag" data-usd="15">$15 USD c/u</span>
+                            <span class="font-semibold price-tag" data-usd="10">$10 USD c/u</span>
                         </div>
                         
                         <div class="flex justify-between items-center">
@@ -712,7 +712,7 @@
                                 <input type="checkbox" name="comicExtras" value="paginasColor">
                                 <span>Páginas a color</span>
                             </label>
-                            <span class="font-semibold price-tag" data-usd="25">$25 USD</span>
+                            <span class="font-semibold price-tag" data-usd="20">$20 USD</span>
                         </div>
                     </div>
                 </div>
@@ -949,7 +949,7 @@
                 <div id="orderSummary" class="mb-6">
                     <div class="border-b pb-4 mb-4">
                         <h3 class="font-semibold mb-2">Servicio seleccionado:</h3>
-                        <p id="selectedService">Ilustración - Retrato: $20 USD</p>
+                        <p id="selectedService">Ilustración - Retrato: $10 USD</p>
                     </div>
                     
                     <div class="border-b pb-4 mb-4">
@@ -970,7 +970,7 @@
                     
                     <div class="flex justify-between items-center text-xl font-bold">
                         <span>Total:</span>
-                        <span id="totalPrice" class="price-tag" data-usd="20">$20 USD</span>
+                        <span id="totalPrice" class="price-tag" data-usd="10">$10 USD</span>
                     </div>
                 </div>
                 
@@ -1108,10 +1108,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const label = currentCurrency === 'MXN' ? 'MXN' : 'USD';
             
             let suffix = '';
-            if (tag.textContent.includes('c/u')) suffix = ' c/u';
-            else if (tag.textContent.includes('% desc.')) {
-                const discountMatch = tag.textContent.match(/\((\d+% desc\.)\)/);
-                if (discountMatch) suffix = ` (${discountMatch[1]})`;
+            // Capture discount text if present and re-add it
+            const discountMatch = tag.textContent.match(/\((.*?)\)/);
+            if (discountMatch) {
+                suffix = ` (${discountMatch[1]})`;
+            } else if (tag.textContent.includes('c/u')) {
+                suffix = ' c/u';
             }
 
             tag.textContent = `$${val.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ${label}${suffix}`;
@@ -1344,7 +1346,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Redirect portfolio link
     document.getElementById('scrollToServices').addEventListener('click', function() {
-        window.location.href = 'https://therichburm.my.canva.site/portafolio?fbclid=PAZXh0bgNhZW0CMTEAAadB6WskPslon95nT5ADjQPG3vQuSWYZYDc7hle0SvHrpzqCnLFdJbfG_ZJ04A_aem_0nSUErgLmEZhYTx1LBCBxQ';
+        window.location.href = 'https://therichburm.my.canva.site/portafolio?fbclid=PAZXh0bgNhZW0CMTEAAadB6WskPslon95nT5ADjQPG3vQuSWYZYDc7hle0SvHrpzqCnLFdJbfG_ZJ04A_aem_0nSUErgLmEZYTx1LBCBxQ';
     });
 
     // Copy summary button
